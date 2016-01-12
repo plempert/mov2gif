@@ -4,3 +4,6 @@ mkdir ./gifs
 sips -s format gif ./pngs/*.png --out ./gifs
 cd ./gifs
 gifsicle --optimize=3 --delay=3 --loopcount *.gif > animation.gif
+cd ..
+mv ./gifs/animation.gif ./
+rm -rf ./pngs ./gifs
